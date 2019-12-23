@@ -1,0 +1,66 @@
+{% extends "product/base.html" %}
+<!DOCTYPE html>
+
+{% load static%}
+
+{% block content %}
+
+<article >
+
+
+  <section class="product_section  ">
+                  <div class="row">
+                      <!-- product name and description coloumn -->
+                      <div class="col">
+                          <div class="product_name product_margin">
+                              <ul class="list-group">
+                                  <li class="list-group-item active">PRODUCT NAME</li>
+                                  <li class="list-group-item">{{product.name}}</li>
+                              </ul>
+                          </div>
+
+                          <div class="product_description product_margin">
+                              <ul class="list-group">
+                                      <li class="list-group-item active">DESCRIPTION</li>
+
+                                              <li class="list-group-item">
+                                              <table>
+
+                                                      <td>PRICING</td>
+                                                      <td style="padding:0px 0px 0px 305px;">20$ </td>
+                                          </table>
+                                          </li>
+                                          <li class="list-group-item">
+                                          <table>
+
+                                                  <td>QUANTITY</td>
+                                                  <td style="padding:0px 0px 0px 288px;">{{product.quantity}} Pieces </td>
+                                          </table>
+                                          </li>
+                                          <li class="list-group-item" >
+                                          <table>
+
+
+                                                  <td >{{product.product_description}} </td>
+                                      </table>
+                                  </li>
+                              </ul>
+
+
+                          </div>
+                      </div>
+                      <!-- ------------------------------ -->
+
+                      <!-- product image partition -->
+                      <div class="col ">
+                          <div class="product_image center">
+                              <img src="{{product.Product_image.url}}" class="img-fluid" alt="Responsive image">
+                          </div>
+                      </div>
+                  </div>
+      </section>
+
+
+</article>
+
+{% endblock content %}

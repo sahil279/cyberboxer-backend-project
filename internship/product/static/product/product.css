@@ -1,0 +1,31 @@
+/* body,html{
+  margin:0;
+  padding: 0;
+
+} */
+.product_section{
+  position: relative;
+  display: inline-block;
+  width: 51vw;
+  padding: 0rem;
+  margin-right: 0rem;
+}
+
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.product_image img{
+  position: relative;
+ max-width: 290px;
+ min-width: 200px;
+
+}
+.product_name,.product_description{
+  
+  margin-bottom: 1rem;
+}
